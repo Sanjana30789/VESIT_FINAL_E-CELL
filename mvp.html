@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Details</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+            background-color: #f8f8f8; /* Light background */
+        }
+
+        .event-details {
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: whitesmoke;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .event-details h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .event-details p {
+            margin-bottom: 10px;
+            line-height: 1.6;
+            color: #555; /* Slightly lighter text */
+        }
+
+        .event-details strong {
+            color: #333; /* Darker color for labels */
+        }
+
+        .event-details a {
+            color: #007bff; /* Blue link color */
+            text-decoration: none;
+        }
+
+        .event-details a:hover {
+            text-decoration: underline;
+        }
+
+        .event-title-container { 
+            text-align: center;
+            margin-bottom: 20px; 
+        }
+
+        .event-title-container h1 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: #333; 
+        }
+
+
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center; 
+        }
+
+        .image-gallery img {
+            max-width: 600px; 
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out; 
+        }
+
+        .image-gallery img:hover {
+            transform: scale(1.05); 
+        }
+
+    
+        @media (max-width: 768px) {
+            .image-gallery img {
+                max-width: 300px; 
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="event-details">
+        <h2>Minimum Viable Product</h2>
+        <p><strong>Date:</strong> September 8, 2024</p>
+        <p><strong>Time:</strong> 1:30 PM - 4:00 PM</p>
+        <p><strong>Location:</strong> Vivekanand Education Society's Institute of Technology, Chembur, Mumbai</p>
+        <p><strong>Description:</strong> The program where expert individuals gave a workshop on Minimum Viable Product and shared real-time examples to understand the importance of MVP in product designing.</p>
+        <p><strong>Contact:</strong> <a href="mailto:ecell.vesit@ves.ac.in">ecell.vesit@ves.ac.in</a></p>
+    </div>
+
+    <div class="event-title-container">  <h1>Glimpse of the Events</h1>
+    </div>
+
+    <div class="image-gallery">
+        <img src="assets/img/1.jpg" alt="Event Image 1">
+        <img src="assets/img/2.jpg" alt="Event Image 2">
+        <img src="assets/img/5.jpg" alt="Event Image 3">
+        
+        
+    </div>
+
+</body>
+</html>
