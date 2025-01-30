@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate to E-Cell</title>
+    <link rel="stylesheet" href="style.css">
+   <style>
+    /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('../VESIT_FINAL_E-CELL/assets/img/55.webp');
+}
+
+/* Donate Section */
+#donate {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: white;
+    background: url('../VESIT_FINAL_E-CELL/assets/img/55.webp');
+}
+
+/* Container */
+.container {
+    max-width: 2000px;
+    height: 400px;
+    margin-top: 50px;
+    /* background: linear-gradient(rgba(40, 58, 90, 0.68), rgba(40, 58, 90, 0.68)); */
+    background-color: #a8e063;
+    
+    
+
+}
+
+/* Flexbox Layout */
+.donate-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding-left: 20px;
+}
+
+/* Left Side - Text */
+.donate-text {
+    flex: 1;
+    text-align: left;
+}
+
+.donate-text h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.donate-text p {
+    font-size: 20px;
+    color: white;
+}
+
+/* Right Side - QR Code */
+.donate-image {
+    flex: 1;
+    text-align: right;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+
+.donate-image img {
+    width: 150px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Donation Input & Button */
+.donate-form {
+    margin-top: 120px;
+}
+
+.donate-form input {
+    padding: 10px;
+    width: 200px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.donate-btn {
+    padding: 12px 20px;
+    font-size: 18px;
+    color: white;
+    background: black ;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    margin-left: 10px;
+}
+
+/* Button Hover Animation */
+.donate-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 5px 15px rgba(255, 126, 95, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .donate-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .donate-text, .donate-image {
+        text-align: center;
+    }
+}
+
+   </style>
+</head>
+<body>
+
+    <section id="donate">
+        <div class="container">
+            <div class="donate-content">
+                <!-- Left Side - Text -->
+                <div class="donate-text">
+                    <h2>Support E-Cell VESIT</h2>
+                    <p>Help us in empowering young entrepreneurs and innovators! Your donation contributes to organizing startup events, workshops, and mentorship programs. Every contribution makes a difference.</p>
+                </div>
+    
+                <!-- Right Side - Image (QR Code) -->
+                <div class="donate-image">
+                    <img src="assets/img/logo.jpg" alt="Donate QR Code">
+                </div>
+            </div>
+    
+            <!-- Amount Input & Donate Button -->
+            <div class="donate-form">
+                <input type="number" id="amount" placeholder="Enter amount (₹)">
+                <button class="donate-btn">Donate Now</button>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
