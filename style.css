@@ -13,7 +13,6 @@ body {
   }
   
   
-  
   a {
     color: #47b2e4;
     text-decoration: none;
@@ -337,7 +336,7 @@ body {
     width: 100%;
     height: 80vh;
     /* background: #37517e; */
-    background: linear-gradient(rgba(40, 58, 90, 0.68), rgba(40, 58, 90, 0.68)), url("../VESIT_FINAL_E-CELL/assets/img/15528_VESIT.webp") fixed center center;
+    background: linear-gradient(rgba(40, 58, 90, 0.68), rgba(40, 58, 90, 0.68)), url("../assets/img/15528_VESIT.webp") fixed center center;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
