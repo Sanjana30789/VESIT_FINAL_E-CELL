@@ -335,14 +335,14 @@ body {
   #hero {
     width: 100%;
     height: 80vh;
-    /* background: #37517e; */
     background: linear-gradient(rgba(40, 58, 90, 0.68), rgba(40, 58, 90, 0.68)), url("../assets/img/15528_VESIT.webp") fixed center center;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
   }
   #hero .container {
-    padding-top: 72px;
+    padding-top: 40px;
+    
   }
   #hero h1 {
     margin: 0 0 10px 0;
@@ -350,6 +350,7 @@ body {
     font-weight: 700;
     line-height: 56px;
     color: #fff;
+
   }
   #hero h2 {
     color: rgba(255, 255, 255, 0.6);
@@ -412,13 +413,13 @@ body {
   }
   @media (max-width: 768px) {
     #hero h1 {
-      font-size: 28px;
+      font-size: 24px;
       line-height: 36px;
     }
     #hero h2 {
       font-size: 18px;
       line-height: 24px;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
     }
     #hero .hero-img img {
       width: 70%;
@@ -455,7 +456,7 @@ body {
   # Sections General
   --------------------------------------------------------------*/
   section {
-    padding: 60px 0;
+    padding: 100px 30px;
     overflow: hidden;
   }
   
@@ -465,7 +466,7 @@ body {
   
   .section-title {
     text-align: center;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
   }
   .section-title h2 {
     font-size: 32px;
@@ -747,6 +748,8 @@ body {
   .services .icon-box {
     box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
     padding: 50px 30px;
+    
+    
     transition: all ease-in-out 0.4s;
     /* background: #fff; */
    /* Replace with your image path */
@@ -766,7 +769,7 @@ body {
   .services .icon-box h4 {
     font-weight: bold;
     margin-bottom: 15px;
-    font-size: 30px;
+    font-size: 24px;
   }
   .services .icon-box h4 a {
     color: #37517e;
@@ -971,6 +974,7 @@ body {
     border-radius: 5px;
     background: #fff;
     transition: 0.5s;
+    
   }
   .team .member .pic {
     overflow: hidden;
@@ -1590,38 +1594,3 @@ body {
     }
   }
   
-  
-  .faculty-member {
-    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-    border-left: 5px solid #007bff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .faculty-member:hover {
-    transform: translateY(-5px);
-  }
-  
-  .faculty-member .pic img {
-    width: 320px;
-    height: 220px;
-    object-fit: cover;
-    border-radius: 50%;
-    /* border: 4px solid #102f50; */
-  }
-  
-  .faculty-member h4 {
-    font-weight: bold;
-    color: #343a40;
-  }
-  
-  .faculty-member span {
-    font-style: italic;
-    color: #007bff;
-  }
-  
-  .faculty-member p {
-    font-size: 14px;
-    color: #6c757d;
-  }

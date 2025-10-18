@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- AOS (Animate On Scroll) CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+     <!-- Link to your main CSS file -->
+    
+    <!-- Icons Library (Remix Icons) -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet"> 
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+
+  <style>
+    #header{
+        background-color: rgba(40, 58, 90, 0.9);
+    }
+
+
+
+    #team .member {
+            margin-bottom: 20px; /* Space between members */
+        }
+
+        #team .faculty-member .pic,
+        #team .member .pic {
+            width: 100px; /* Fixed width for images */
+            height: 100px; /* Fixed height for images */
+            overflow: hidden; /* Ensure images stay within container */
+            border-radius: 50%; /* Make images circular */
+            margin-right: 20px; /* Space between image and info */
+        }
+
+        #team .faculty-member .pic img,
+        #team .member .pic img {
+            width: 100%; /* Make image fill the container */
+            height: 100%; /* Make image fill the container */
+            object-fit: cover; /* Maintain aspect ratio and cover container */
+        }
+
+        #team .member-info {
+            flex-grow: 1; /* Allow info to take up available space */
+        }
+
+        /* Styles for social media icons */
+        .social a {
+            margin: 0 5px;
+            color: #333; /* Adjust color as needed */
+            font-size: 1.2rem; /* Adjust size as needed */
+        }
+
+        .social a:hover {
+            color: #007bff; /* Example hover color */
+        }
+
+        /* Media queries for responsiveness */
+        @media (min-width: 992px) { /* Desktop and larger */
+            #team .col-lg-6 {
+                flex: 0 0 50%; /* Two faculty members per row */
+                max-width: 50%;
+            }
+
+            #team .col-md-4 {
+                flex: 0 0 33.33%; /* Three council members per row */
+                max-width: 33.33%;
+            }
+        }
+
+        @media (max-width: 768px) { /* Tablets and smaller */
+            #team .faculty-member {
+                flex-direction: column; /* Stack faculty members vertically */
+                align-items: center; /* Center faculty member content */
+                text-align: center;
+            }
+
+            #team .faculty-member .pic {
+                margin: 0 auto 10px; /* Center image and add bottom margin */
+            }
+
+            #team .col-md-4 {
+                flex: 0 0 50%; /* Two council members per row on smaller screens */
+                max-width: 50%;
+            }
+        }
+
+
+        /* ... (Your other CSS) ... */
+
+/* Responsive Team Section */
+#team .member {
+    margin-bottom: 20px; 
+   
+}
+
+#team .faculty-member .pic,
+#team .member .pic {
+    width: 100px; /* Fixed width for images */
+    height: 100px; /* Fixed height for images */
+    overflow: hidden; /* Ensure images stay within container */
+    border-radius: 50%; /* Make images circular */
+    margin-right: 10px; /* Space between image and info */
+}
+
+#team .faculty-member .pic img,
+#team .member .pic img {
+    width: 100%; /* Make image fill the container */
+    height: 100%; /* Make image fill the container */
+    object-fit: cover; /* Maintain aspect ratio and cover container */
+}
+
+#team .member-info {
+    flex-grow: 1; /* Allow info to take up available space */
+}
+
+/* Styles for social media icons */
+.social a {
+    margin: 0 5px;
+    color: #333; /* Adjust color as needed */
+    font-size: 1.2rem; /* Adjust size as needed */
+}
+
+.social a:hover {
+    color: #007bff; /* Example hover color */
+}
+
+/* Media queries for responsiveness */
+@media (min-width: 992px) { /* Desktop and larger */
+    #team .col-lg-6 {
+        flex: 0 0 50%; /* Two faculty members per row */
+        max-width: 50%;
+    }
+
+    #team .col-md-4 {
+        flex: 0 0 33.33%; /* Three council members per row */
+        max-width: 33.33%;
+    }
+
+    #team .col-md-6 {
+        flex: 0 0 50%; /* Two council members per row (if using col-md-6) */
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 991px) { /* Tablets and smaller */
+    #team .col-md-4, #team .col-md-6 { /* Target both col-md-4 and col-md-6 */
+        flex: 0 0 50%; /* Two council members per row */
+        max-width: 50%;
+    }
+
+    #team .faculty-member {
+        flex-direction: column; /* Stack faculty members vertically */
+        align-items: center; /* Center faculty member content */
+        text-align: center;
+    }
+
+    #team .faculty-member .pic {
+        margin: 0 auto 10px; /* Center image and add bottom margin */
+    }
+}
+
+@media (max-width: 767px) { /* Small screens (phones) */
+    #team .col-md-4, #team .col-md-6 { /* Target both col-md-4 and col-md-6 */
+        flex: 0 0 100%; /* One council member per row */
+        max-width: 570%;
+    }
+}
+
+        
+        @media (max-width: 576px) { /* Small screens (phones) */
+            #team .col-md-4 {
+                flex: 0 0 100%; /* One council member per row */
+                max-width: 100%;
+            }
+        }
+  </style>
+    
+</head>
+<body>
+
+    <header id="header" class="fixed-top">
+        <div class="container d-flex align-items-center ">
+          <h1 class="logo me-auto "><a href="index.html" >
+            <img src="assets/img/logo.jpg" alt="Logo" class="logo-img" />
+            E-Cell Vesit</a></h1>
+          <nav id="navbar" class="navbar">
+            <ul>
+              <li><a class="nav-link scrollto active" href="index.html#hero">Home</a></li>
+              <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
+              <li class="dropdown">
+                <a href="#"><span>Events</span> <i class="bi bi-chevron-down"></i></a>
+                <ul>
+                  <li><a href="e-summit.html">E-Summit</a></li>
+                  <li><a href="mvp.html">Minimum Viable Product</a></li>
+                  <li><a href="#">Business Viable Product</a></li>
+                  <li><a href="#">World Entrepreneur Day</a></li>
+                  
+    
+                </ul>
+              </li>
+              <li><a class="nav-link scrollto" href="#portfolio">Moments</a></li>
+              <li><a class="nav-link scrollto" href="#team">Team</a></li>
+              <!-- <li><a class="nav-link scrollto" href="donate.html">Donate</a></li> -->
+            
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+          </nav>
+        </div>
+      </header>
+
+    <!-- Team Section -->
+    <section id="team" class="team section-bg ">
+        <div class="container" data-aos="fade-up">
+      
+            <!-- Head Faculty Section -->
+            <div class="section-title text-center">
+                <h2>Meet Our Team</h2>
+                <p>Meet our esteemed faculty mentors who guide and support VESIT E-Cell with their expertise and vision.</p>
+            </div>
+      
+            <div class="row justify-content-center ">
+                <!-- Faculty Members -->
+                <div class="col-lg-6 mb-4">
+                    <div class="member faculty-member d-flex align-items-center p-4 shadow-sm" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="pic">
+                            <img src="assets/img/amitsir.jpg" class="img-fluid rounded-circle shadow" alt="">
+                        </div>
+                        <div class="member-info">
+                            <h4>Mr. Amit Singh</h4>
+                            <span>Faculty Incharge at VESIT E-Cell</span>
+                            <p>Guiding innovation and startup culture at VESIT.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mb-4">
+                    <div class="member faculty-member d-flex align-items-center p-4 shadow-sm" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="pic">
+                            <img src="assets/img/abhisheksir.jpg" class="img-fluid rounded-circle shadow" alt="">
+                        </div>
+                        <div class="member-info">
+                            <h4>Mr. Abhishek Chaudari</h4>
+                            <span>Co - Incharge at VESIT E-Cell</span>
+                            <p>Providing strategic mentorship to the E-Cell team.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Junior Members Section -->
+            <div class="section-title text-center mt-5">
+                <h2>Core Councils</h2>
+                <p>Meet the brilliant minds driving entrepreneurship and innovation forward.</p>
+            </div>
+
+            <div class="container">
+                <div class="row justify-content-center">
+                    <!-- CEO - Full width -->
+                    <div class="col-md-4 col-sm-12">
+                        <div class="member text-center shadow-lg rounded bg-white p-4" data-aos="zoom-in" data-aos-delay="100">
+                            <div class="pic"><img src="assets/img/ceo.png" class="img-fluid" alt=""></div>
+                            <div class="member-info">
+                                <h4>Ajinkya Phadthare</h4>
+                                <span>Chief Executive Officer</span>
+                                <div class="social">
+                                    <a href=""><i class="ri-twitter-fill"></i></a>
+                                    <a href=""><i class="ri-facebook-fill"></i></a>
+                                    <a href=""><i class="ri-instagram-fill"></i></a>
+                                    <a href=""><i class="ri-linkedin-box-fill"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <hr>
+            
+                <div class="row justify-content-center">
+                    <!-- CTO and COO in same row on large screens -->
+                    <div class="col-md-4 col-sm-12 mb-4">
+                        <div class="member text-center shadow-lg rounded bg-white p-4" data-aos="zoom-in" data-aos-delay="100">
+                            <div class="pic"><img src="assets/img/sanjana1.png" class="img-fluid" alt=""></div>
+                            <div class="member-info">
+                                <h4>Sanjana Choubey</h4>
+                                <span>Chief Technical Officer - Software</span>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="col-md-4 col-sm-12 mb-4">
+                        <div class="member text-center shadow-lg rounded bg-white p-4" data-aos="zoom-in" data-aos-delay="100">
+                            <div class="pic"><img src="assets/img/mayank.png" class="img-fluid" alt=""></div>
+                            <div class="member-info">
+                                <h4>Mayank Hinge</h4>
+                                <span>Chief Operations Officer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row justify-content-center">
+                    <!-- CTO and COO in same row on large screens -->
+                    <div class="col-md-4 col-sm-12 mb-4">
+                        <div class="member text-center shadow-lg rounded bg-white p-4" data-aos="zoom-in" data-aos-delay="100">
+                            <div class="pic"><img src="assets/img/sandali1.jpg" class="img-fluid" alt=""></div>
+                            <div class="member-info">
+                                <h4>Sandali Bhatt</h4>
+                                <span>Chief Public Relations Officer</span>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="col-md-4 col-sm-12 mb-4">
+                        <div class="member text-center shadow-lg rounded bg-white p-4" data-aos="zoom-in" data-aos-delay="100">
+                            <div class="pic"><img src="assets/img/shrushti.png" class="img-fluid" alt=""></div>
+                            <div class="member-info">
+                                <h4>Shrushti Pawar</h4>
+                                <span>Chief Creatives Officer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row justify-content-center">
+                    <!-- CTO and COO in same row on large screens -->
+                    <div class="col-md-4 col-sm-12 mb-4">
+                        <div class="member text-center shadow-lg rounded bg-white p-4" data-aos="zoom-in" data-aos-delay="100">
+                            <div class="pic"><img src="assets/img/sneha.png" class="img-fluid" alt=""></div>
+                            <div class="member-info">
+                                <h4>Sneha Patil</h4>
+                                <span>Chief Technical Officer - Hardware</span>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="col-md-4 col-sm-12 mb-4">
+                        <div class="member text-center shadow-lg rounded bg-white p-4" data-aos="zoom-in" data-aos-delay="100">
+                            <div class="pic"><img src="assets/img/shreyash.png" class="img-fluid" alt=""></div>
+                            <div class="member-info">
+                                <h4>Shreyash Das</h4>
+                                <span>Chief Finance Officer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            
+               
+
+          
+                <!-- Second Year Councils Section -->
+<div class="section-title text-center mt-5">
+    <h2>Second Year Councils</h2>
+    <p>Meet our dedicated second-year council members contributing to the success of E-Cell.</p>
+</div>
+<div class="container">
+   <div class="row justify-content-center">
+        <!-- CTO and COO in same row on large screens -->
+        <div class="col-md-4 col-sm-12 mb-4">
+            <div class="member text-center shadow-lg rounded bg-white p-4" data-aos="zoom-in" data-aos-delay="100">
+                <div class="pic"><img src="assets/img/lokesh.jpg" class="img-fluid" alt=""></div>
+                <div class="member-info">
+                    <h4>Lokesh Somaiya</h4>
+                    <span>Junior Technical Anaylst - Hardware</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-12 mb-4">
+            <div class="member text-center shadow-lg rounded bg-white p-4" data-aos="zoom-in" data-aos-delay="100">
+                <div class="pic"><img src="assets/img/atharva.jpg" class="img-fluid" alt=""></div>
+                <div class="member-info">
+                    <h4>Atharva Chaudhari</h4>
+                    <span>Junior Public Relations Analyst</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row justify-content-center">
+        <!-- CTO and COO in same row on large screens -->
+        <div class="col-md-4 col-sm-12 mb-4">
+            <div class="member text-center shadow-lg rounded bg-white p-4" data-aos="zoom-in" data-aos-delay="100">
+                <div class="pic"><img src="assets/img/khushi.jpg" class="img-fluid" alt=""></div>
+                <div class="member-info">
+                    <h4>Khushi </h4>
+                    <span>Junior Creatives Analyst</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-12 mb-4">
+            <div class="member text-center shadow-lg rounded bg-white p-4" data-aos="zoom-in" data-aos-delay="100">
+                <div class="pic"><img src="assets/img/niraj.jpg" class="img-fluid" alt=""></div>
+                <div class="member-info">
+                    <h4>Niraj Chaudhari</h4>
+                    <span>Junior Technical Officer - Software</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row justify-content-center">
+        <!-- CTO and COO in same row on large screens -->
+        <div class="col-md-4 col-sm-12 mb-4">
+            <div class="member text-center shadow-lg rounded bg-white p-4" data-aos="zoom-in" data-aos-delay="100">
+                <div class="pic"><img src="assets/img/yash.jpg" class="img-fluid" alt=""></div>
+                <div class="member-info">
+                    <h4>Yash Bhurke</h4>
+                    <span>Junior Operations Analyst</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-12 mb-4">
+            <div class="member text-center shadow-lg rounded bg-white p-4" data-aos="zoom-in" data-aos-delay="100">
+                <div class="pic"><img src="assets/img/shravani.png" class="img-fluid" alt=""></div>
+                <div class="member-info">
+                    <h4>Shravani</h4>
+                    <span>Junior Creatives Analyst</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+  <!-- <div class="section-title text-center mt-5">
+    <h2>First Year Councils</h2>
+    <p>Meet our dedicated second-year council members contributing to the success of E-Cell.</p>
+</div>
+<div class="container">
+     <div class="row justify-content-center">
+       
+        <div class="col-md-8 col-sm-12 mb-">
+            <div class="member text-center shadow-lg rounded bg-white p-4" data-aos="zoom-in" data-aos-delay="100">
+                <div class="pic"><img src="assets/img/gaurav.png" class="img-fluid" alt=""></div>
+                <div class="member-info">
+                    <h4>Gaurav Jain</h4>
+                    <span>Junior Public Relations Officer</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-12 mb-4">
+            <div class="member text-center shadow-lg rounded bg-white p-4" data-aos="zoom-in" data-aos-delay="100">
+                <div class="pic"><img src="assets/img/twinkle.png" class="img-fluid" alt=""></div>
+                <div class="member-info">
+                    <h4>Twinkle</h4>
+                    <span>Junior Technical Analyst-Software</span>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+    <!-- <div class="row justify-content-center">
+        
+        <div class="col-md-4 col-sm-12 mb-4">
+            <div class="member text-center shadow-lg rounded bg-white p-4" data-aos="zoom-in" data-aos-delay="100">
+                <div class="pic"><img src="assets/img/mamta.png" class="img-fluid" alt=""></div>
+                <div class="member-info">
+                    <h4>Mamta Mirani</h4>
+                    <span>Junior Creatives Analyst</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-12 mb-4">
+            <div class="member text-center shadow-lg rounded bg-white p-4" data-aos="zoom-in" data-aos-delay="100">
+                <div class="pic"><img src="assets/img/heena.png" class="img-fluid" alt=""></div>
+                <div class="member-info">
+                    <h4>Heena</h4>
+                    <span>Junior Operations Analyst</span>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+    <!-- <div class="row justify-content-center">
+      
+        <div class="col-md-4 col-sm-12 mb-4">
+            <div class="member text-center shadow-lg rounded bg-white p-4" data-aos="zoom-in" data-aos-delay="100">
+                <div class="pic"><img src="assets/img/himanshu.png" class="img-fluid" alt=""></div>
+                <div class="member-info">
+                    <h4>Himanshu</h4>
+                    <span>Junior Operations Analyst</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-12 mb-4">
+            <div class="member text-center shadow-lg rounded bg-white p-4" data-aos="zoom-in" data-aos-delay="100">
+                <div class="pic"><img src="assets/img/gowri.png" class="img-fluid" alt=""></div>
+                <div class="member-info">
+                    <h4>Gowri</h4>
+                    <span>Junior Creatives Analyst</span>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+
+    </section>
+
+    <!-- AOS & Bootstrap JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
